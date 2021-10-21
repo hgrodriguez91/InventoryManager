@@ -1,0 +1,23 @@
+
+  <table class="table col">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Details</th>
+                <th scope="col">Actions</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of items;">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.details}}</td>
+                <td><span class="btn btn-primary btn-sm mr-5" onclick="">edit</span>
+                    <span class="btn btn-danger btn-sm ml-5">delete</span>
+                </td>
+              
+                
+             
+            </tr>        
+        </tbody>
+    </table>
