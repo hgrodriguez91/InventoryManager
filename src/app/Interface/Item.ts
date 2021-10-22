@@ -1,4 +1,4 @@
  export default interface Item{
-    id: number,
+    id?: number,
     details: string
 }

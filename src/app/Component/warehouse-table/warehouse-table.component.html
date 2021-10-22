@@ -1,0 +1,22 @@
+<table class="table col">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Actions</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of warehouses;">
+            <th scope="row">{{item.id}}</th>
+            <td>{{item.name}}</td>
+            <td><span class="btn btn-primary btn-sm mr-5" (click)="editWarehouse(item)" >edit</span>
+                <span class="btn btn-danger btn-sm ml-5" (click)="delete(item.id!)">delete</span>
+            </td>
+          
+            
+         
+        </tr>        
+    </tbody>
+</table>

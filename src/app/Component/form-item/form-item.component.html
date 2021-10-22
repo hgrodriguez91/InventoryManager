@@ -1,11 +1,11 @@
 
-<h3>Add New Item</h3>
-    <form>
+<h3>{{text}}</h3>
+    <form [formGroup]="formItem">
         <div class="form-group">
             <label>Item Detail</label>
-            <input class="form-control" type="text">
+            <input class="form-control" type="text" name="details" [value]="itemEdit.details" formControlName="details">
         </div>
         <div class="form-group mt-3 d-flex justify-content-end">
-            <button class="btn btn-primary">Add</button>
+            <button class="btn btn-primary" [disabled]="formItem.invalid" (click)="addItem()">Add</button>
         </div>
     </form>

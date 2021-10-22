@@ -1,4 +1,4 @@
 export default interface Warehouse{
-    id:number,
+    id?:number,
     name:string
 } 

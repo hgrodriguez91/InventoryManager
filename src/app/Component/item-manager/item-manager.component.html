@@ -1,0 +1,9 @@
+  <div class="d-flex justify-content-between col-md-12 mt-3">
+    <div class="col-md-4">
+      <app-form-item (ItemEmiter)="changeItems($event)" [itemEdit]="item" [edit]="edit" [text]="text"></app-form-item>
+    </div>
+    <div class="col-md-7">
+      <app-item-table [items]="items" (ItemEdit)="onEdit($event)"></app-item-table>
+    </div>
+  </div>
+  

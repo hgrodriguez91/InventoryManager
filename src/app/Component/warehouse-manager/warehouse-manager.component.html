@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-between col-md-12 mt-3">
+    <div class="col-md-4">
+      <app-warehouse-form (warehouseEmiter)="changeWarehouses($event)" [warehouseEdit]="warehouse" [edit]="edit" [text]="text"></app-warehouse-form>
+    </div>
+    <div class="col-md-7">
+      <app-warehouse-table [warehouses]="warehouses" (warehouseEdit)="onEdit($event)"></app-warehouse-table>
+    </div>
+  </div>
+  

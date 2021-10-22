@@ -1,4 +1,4 @@
-
+<h3>Items List</h3>
   <table class="table col">
         <thead>
             <tr>
@@ -12,8 +12,8 @@
             <tr *ngFor="let item of items;">
                 <th scope="row">{{item.id}}</th>
                 <td>{{item.details}}</td>
-                <td><span class="btn btn-primary btn-sm mr-5" onclick="">edit</span>
-                    <span class="btn btn-danger btn-sm ml-5">delete</span>
+                <td><span class="btn btn-primary btn-sm mr-5" (click)="editItem(item)" >edit</span>
+                    <span class="btn btn-danger btn-sm ml-5" (click)="delete(item.id!)">delete</span>
                 </td>
               
                 

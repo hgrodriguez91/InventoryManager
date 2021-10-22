@@ -7,10 +7,8 @@ import Item from '../Interface/Item';
   providedIn: 'root'
 })
 export class ItemService {
-
   
   base_url = "https://localhost:5001/items";
-
   
 
   constructor(private http: HttpClient) { }

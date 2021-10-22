@@ -3,5 +3,5 @@ export default interface Inv{
     warehouse_id: number,
     quantity: number,
     enabled: boolean,
-    dateat: Date
+    dateAdded: Date
 }
