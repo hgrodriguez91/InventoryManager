@@ -3,13 +3,13 @@
         <h3>Add item to warehouse</h3>
         <form [formGroup]="formInventory">
             <div class="form-group mt-3">
-                <label></label>
+                <label>Select a Warehouse</label>
                 <select class="form-select"  formControlName="warehouse">                    
                     <option *ngFor="let w of warehouses" [value]="w.id">{{w.name}}</option>            
                 </select>
             </div>
             <div class="form-group mt-3">
-
+                <label>Select a Item</label>
                 <select class="form-select"  formControlName="item">                   
                     <option *ngFor="let item of items" [value]="item.id">{{item.details}}</option>
                     

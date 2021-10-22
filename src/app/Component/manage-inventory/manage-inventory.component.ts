@@ -55,6 +55,7 @@ export class ManageInventoryComponent implements OnInit {
     this.quantity= this.inv.quantity = this.formInventory.controls['quantity'].value;
     this.inv.enabled = true;
     this.inv.dateAdded= new Date
+    this.formInventory.reset();
     this.invService.addItemToWarehouse(this.inv).subscribe(resp => {
       console.log(resp);
     })
